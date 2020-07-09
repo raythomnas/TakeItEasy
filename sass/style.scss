@@ -1,0 +1,226 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: black;
+}
+
+/*font-family: 'Changa One', cursive;
+font-family: 'Roboto', sans-serif;
+red colour code #E04F48*/
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+h5 {
+	font-size: 1.8rem;
+	color: #443861;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 3.5rem;
+	color: #D9E7FA;
+	font-family: 'Changa One', cursive;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 3rem;
+	color: #D9E7FA;
+	font-family: 'Changa One', cursive;
+	font-style: italic;
+}
+
+p {
+	color: #D9E7FA;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+
+i {
+	color: #D9E7FA;
+}
+.italic {
+	font-style: italic;
+}
+
+.hoverText:hover {
+	color: #E04F48;
+	cursor: pointer;
+}
+
+.purpBg {
+	background-color: #656FA6;
+}
+
+#aboutPopUp {
+	height: 90%;
+	width: 100%;
+	top: 5%;
+	display: none;
+}
+
+#filtersPopUp {
+	height: 90%;
+	top: 5%;
+	display: none;
+}
+
+#mapPopUp {
+	height: 90%;
+	width: 100%;
+	top: 5%;
+	display: none;
+}
+
+#menuBox {
+	height: 90%;
+}
+
+#topSection {
+	height: 40rem;
+}
+
+#menuImgBox {
+	overflow: hidden;
+}
+
+#menuImgBox img {
+	height: 100%;
+	width: auto;
+}
+
+#siteTitle {
+	top: -1.8rem; 
+	left: 35%;
+}
+
+.optionsBoxOutline {
+	outline-width: 1rem; 
+	outline-style: solid; 
+	outline-color: black;
+}
+
+.iconPopUps {
+	display: none;
+	width: 20rem;
+	z-index: 2;
+	left: -50%;
+	font-size: 1rem;
+}
+
+.iconsMed {
+	font-size: 5rem;
+}
+
+.extInfoBox {
+	display: none;
+}
+
+.bookingSection {
+	display: none;
+} 
+.scroll-left {
+ 	height: 3rem;	
+ 	overflow: hidden;
+ 	position: relative;
+}
+
+/*swiper*/
+
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: black;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+
+.scroll-left p {
+	 position: absolute;
+	 width: 125rem;
+	 height: 100%;
+	 margin: 0;
+	 font-size: 2.5rem;
+	 line-height: 3rem;
+	 text-align: left;
+	 /* Starting position */
+	 -moz-transform:translateX(-10rem);
+	 -webkit-transform:translateX(-10rem);	
+	 transform:translateX(-10rem);
+	 /* Apply animation to this element */	
+	 -moz-animation: scroll-left 18s linear infinite;
+	 -webkit-animation: scroll-left 18s linear infinite;
+	 animation: scroll-left 18s linear infinite;
+	}
+	/* Move it (define the animation) */
+	@-moz-keyframes scroll-left {
+	 0%   { -moz-transform: translateX(100%); }
+	 100% { -moz-transform: translateX(-100%); }
+	}
+	@-webkit-keyframes scroll-left {
+	 0%   { -webkit-transform: translateX(100%); }
+	 100% { -webkit-transform: translateX(-100%); }
+	}
+	@keyframes scroll-left {
+	 0%   { 
+	 -moz-transform: translateX(100%); /* Browser bug fix */
+	 -webkit-transform: translateX(100%); /* Browser bug fix */
+	 transform: translateX(100%); 		
+	 }
+	 100% { 
+	 -moz-transform: translateX(-100%); /* Browser bug fix */
+	 -webkit-transform: translateX(-100%); /* Browser bug fix */
+	 transform: translateX(-100%); 
+	 }
+	}
+
+@media screen and (min-width: 992px) {
+  .mediaQ1 {
+  	width: 48%;
+  	display: block;
+  	float: left;
+  	position: fixed;
+  	left: 0;
+  }
+    .mediaQ2 {
+  	width: 48%;
+  	height: 100%;
+  	display: block;
+  	float: right;
+  }
+  	#aboutPopUp p {
+  		margin: 2rem !important;
+  		padding: 2rem !important;
+  	}
+}
+@media screen and (max-width: 992px) {
+  	#mapPopUp{
+	position: fixed !important;
+	z-index: 3;
+	top: 1rem;
+	right: 1rem;
+  	}
+}

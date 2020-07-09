@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take It Easy</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Roboto:300i,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="test">
+
+<div class="mediaQ1">
+
+<!-- Scroll feature -->
+
+
+<div class="scroll-left mt-3 mb-5">
+	<p id="topText">Take it easy : to relax and avoid hard work or strain</p>
+</div>
+
+
+<!-- Main menu & splash image -->
+
+
+<div class="container mb-4 pb-4">
+	<div class="row w-100 justify-content-center align-items-center m-0 p-0" id="topSection">
+
+<!-- Menu -->
+
+		<div class="col-6 bg-info" id="menuBox">
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-12">
+					<h5 class="text-center italic">"Aotearoa's finest <br> accommodation"</h5>
+				</div>
+				<div class="col-12">
+					<h5 class="text-center hoverText" id="aboutBtn">About Take it Easy</h5>
+				</div>
+				<div class="col-12">
+					<h5 class="text-center hoverText" id="filtersBtn">Add your travel details</h5>
+				</div>
+				<div class="col-12">
+					<h5 class="text-center hoverText" id="viewOptions">View available options</h5>
+				</div>
+			</div>	
+		</div>
+
+<!-- splash image -->
+
+		<div class="col-6 h-100 pl-0" id="menuImgBox">
+
+			<!-- About area -->
+			
+			<div id="aboutPopUp" class="position-absolute bg-info text-center">
+				<p class="text-center italic m-5 p-5" >Take it Easy aims to bring you Aotearoa's best accommodation as rated by the top accommodation site's on the web. Our aim is to take the hassle and stress out of accommodation booking and make the experience as fun as any good travel experience should be</p>
+				<p id="closeAbout" class="italic hoverText">close</p>
+			</div>
+
+			<!-- Map area -->
+
+			<div id="mapPopUp" class="position-absolute bg-info text-center">
+				<div id="map"></div>
+				<h5 id="closeMap" class="italic hoverText" style="z-index: 5;">close</h5>
+			</div>
+
+			<!-- filters area -->
+
+			<div id="filtersPopUp" class="position-absolute bg-info text-center w-100">
+				<div class="form-group pt-3 mt-3">
+					<div class="w-100 row justify-content-center">
+						<div class="col-9">
+					    <select class="form-control m-2 " id="selectRegion" style="margin: 0 auto">
+					      <option value="Wellington" hidden="yes">Choose Region</option>
+					      <option value="Wellington">Wellington</option>
+					      <option value="Auckland">Auckland</option>
+					    </select>
+						</div>
+					</div>
+					<div class="w-100 row justify-content-center">
+						<div class="col-9">
+					    <select class="form-control m-2 " id="selectNumber" style="margin: 0 auto">
+					      <option value="1" hidden="yes">Choose Number People</option>
+					      <option value="1">1</option>
+					      <option value="2">2</option>
+					      <option value="3">3</option>
+					      <option value="4">4</option>
+					      <option value="5">5</option>
+					      <option value="6">6</option>
+					      <option value="7">7</option>
+					      <option value="8">8</option>
+					      <option value="9">9</option>
+					      <option value="10">10</option>
+					      <option value="11">11</option>
+					      <option value="12">12</option>
+					    </select>
+						</div>
+					</div>
+    			<input type="text" id="startDate" name="startDate" class="w-75 m-2" placeholder="Choose check in date..">
+    			<input type="text" id="endDateBox" name="endDate" class="w-75 m-2" placeholder="Choose check out date..">
+				</div>
+					<p id="closeFilters" class="italic hoverText">view options</p>
+				</div>
+					<img src="images/img2.jpg">
+			</div>
+
+<!-- site tile -->
+
+		<div class="col-12 justify-content-center">
+			<h1 class="text-center position-absolute" id="siteTitle">Take it Easy</h1>
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+<div class="mediaQ2">
+<!-- these exist to help with certain hide show functions in JS, they do nothing and appear as nothing on the page itself -->
+
+<div id="extInfoBoxplaceHolderId">
+</div>
+
+<div id="extbookingSectionplaceHolderId">
+</div>
+
+<!-- acc options boxes where all accommodation options are output-->
+
+<div class="col pt2" id="stepOneBox">
+</div>
+
+<!-- Little return to top message -->
+
+<div class="container pt-4">
+	<p class="text-center" id="returnToTopText">End of the line buddy! Click me to return to the start :)</p>
+</div>
+
+</div>
+
+<!-- external JS links -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="config.json"></script>
+
+<!-- my JS file link -->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
